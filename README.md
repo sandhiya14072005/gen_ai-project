@@ -1,8 +1,4 @@
-// ===========================================
-// BUSINESS RULE: Auto-assign Student Requests
-// Table: u_student_request
-// When: before, insert
-// ===========================================
+
 (function executeRule(current, previous) {
     // Auto-assign based on request category
     var category = current.u_category.toString();
